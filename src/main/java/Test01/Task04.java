@@ -72,7 +72,11 @@ public class Task04 {
             }
         }
 
-        return "Najpopularniejsza liczba to: " + mostPopular + " Pojawiła się " + maxCount + " razy.";
+        if (maxCount == 1) {
+            return "Nie ma liczby, która występuje więcej niż raz.";
+        } else {
+            return "Najpopularniejsza liczba to: " + mostPopular + ". Pojawiła się " + maxCount + " razy.";
+        }
 
     }
 
